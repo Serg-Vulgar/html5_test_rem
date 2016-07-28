@@ -1,0 +1,112 @@
+/*
+To customize the look and feel of Ionic, you can override the variables
+in ionic's _variables.scss file.
+
+For example, you might change some of the default colors:
+
+$light:                           #fff !default;
+$stable:                          #f8f8f8 !default;
+$positive:                        #387ef5 !default;
+$calm:                            #11c1f3 !default;
+$balanced:                        #33cd5f !default;
+$energized:                       #ffc900 !default;
+$assertive:                       #ef473a !default;
+$royal:                           #886aea !default;
+$dark:                            #444 !default;
+*/
+
+// The path for our ionicons font files, relative to the built CSS in www/css
+$ionicons-font-path: "../lib/ionic/fonts" !default;
+
+// Include all of Ionic
+@import "www/lib/ionic/scss/ionic";
+
+html, body {
+  font-size: 1rem;
+}
+
+.main-page {
+  background-color: #ff7878;
+
+  ion-header-bar {
+    background-color: transparent;
+    border: none !important;
+    background-image: none;
+    .button {
+      color: #fff;
+      & i:before {
+        font-size: 2rem !important;
+      }
+    }
+  }
+  ion-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    h1 {
+      text-align: center;
+      color: #fff;
+      font-size: 2.5rem;
+    }
+  }
+}
+
+.plugins-page {
+
+  background-color: #ededed;
+  ion-header-bar {
+    background-color: #d0021b;
+    height: 4rem !important;
+    h1, .button {
+      color: #fff;
+    }
+    .button {
+      margin: 0 !important;
+      i:before {
+        font-size: 2rem !important;
+      }
+    }
+    .title {
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+      transform: translateY(-50%);
+      font-size: 1.5rem;
+      line-height: 3rem;
+      height: auto;
+      margin: 0 !important;
+    }
+  }
+  .has-header {
+    top: 4rem !important;
+  }
+  .plugins-list {
+    margin: 0.5rem;
+    background-color: #fff;
+    text-align: center;
+    overflow: hidden;
+    li {
+      display: inline-block;
+      text-align: center;
+      width: 5.6rem;
+      height: 5.6rem;
+      margin: 0.3rem;
+      padding: 0;
+      img {
+        position: relative;
+        top: 0.8rem;
+        width: 1.8rem;
+      }
+      h2 {
+        position: absolute;
+        font-weight: 200;
+        bottom: 0.5rem;
+        left: 0;
+        right: 0;
+        margin: auto;
+        white-space: normal;
+        font-size: 0.7rem;
+      }
+    }
+  }
+}

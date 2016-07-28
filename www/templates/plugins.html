@@ -1,0 +1,17 @@
+</ion-content>
+<ion-pane class="plugins-page">
+  <ion-header-bar class="">
+    <button class="button button-icon" ng-click="goToMain()">
+      <i class="icon ion-navicon"></i>
+    </button>
+    <h1 class="title">Plugins</h1>
+  </ion-header-bar>
+  <ion-content>
+    <ul class="plugins-list">
+      <li ng-repeat="plugin in pluginsList track by $index " class="item col-top plugin" ng-click="">
+        <img ng-src="{{ plugin.icon }}" alt="{{ plugin.name }}">
+        <h2>{{ plugin.name }}</h2>
+      </li>
+    </ul>
+  </ion-content>
+</ion-pane>
